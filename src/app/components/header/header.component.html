@@ -1,6 +1,7 @@
 <div>
     <h3>{{ title }}</h3>
-    <button (click)="openSignupForm()" >Signup</button>
+    <button *ngIf="!isSignedUp" (click)="openSignupForm()">Signup</button>
+    <button *ngIf="isSignedUp" (click)="logout()">Logout</button>
 </div>
 <section>
     <p>{{ lineText }}</p>

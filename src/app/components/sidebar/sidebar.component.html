@@ -1,0 +1,29 @@
+<nav>
+    <ul>
+        <!-- <li>Home</li>
+        <li>Favourites</li>
+        <li>Library</li>
+        <li>Account</li> -->
+        <li *ngFor="let nav of navigations" 
+            (click)="setActive(nav.id)"
+            [ngStyle]="{'margin': '1rem 0', 'font-weight': 600}"
+            [ngClass]="nav.id == selectedId ? 'white' : 'black'"
+        >
+            {{ nav.title }}
+        </li>
+    </ul>
+</nav>
+
+<!-- <button (click)="changeTheme()">Change Theme</button> -->
+
+<!-- Structual Directives -->
+<!-- ngIf -->
+<!-- ngFor -->
+
+
+<!-- Attribute Directives -->
+ <!-- ngClass
+ ngStyle -->
+<!-- 
+One way Binding
+ Two way binding -->

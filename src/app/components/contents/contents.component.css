@@ -1,0 +1,30 @@
+.row{
+    display: flex;
+    column-gap: 20px;
+    padding: 10px 10px;
+}
+
+.music{
+    flex-grow: 1;
+    padding: 10px;
+    border: 2px #fff solid ;
+    border-radius: 4px;
+}
+
+img{
+    width: 100%;
+}
+
+p{
+    font-size: 80%;
+}
+
+button{
+    background-color: rgb(255, 251, 7);
+    border-radius: 5px;
+    margin-top: 5px;
+    border: none;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}

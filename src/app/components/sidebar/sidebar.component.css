@@ -1,0 +1,32 @@
+nav{
+    margin: 1rem ;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin: 1rem 0;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    padding: 5px;
+    /* color: #fff; */
+}
+
+li:hover{
+    background-color: #d2dffd;
+    border-radius: 4px;
+    /* text-decoration: underline; */
+}
+
+.white{
+    color: #fff;
+}
+.black{
+    color: #161616;
+}
+
+.white:hover{
+    color: #000000;
+}

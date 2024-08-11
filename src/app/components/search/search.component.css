@@ -1,0 +1,26 @@
+div{
+    display: flex;
+    justify-content: flex-end;
+    padding: 3px;
+    column-gap: 5px;
+    background-color: rgb(208, 208, 255);
+}
+input{
+    border: none;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+
+input:active, input:hover{
+    border: none ;
+    outline: none;
+}
+
+button{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}

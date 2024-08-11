@@ -1,10 +1,23 @@
 <app-header 
   [title]="title"
-  [lineText]="'Hi There form Ayush. This is the dummy website.'"
+  [lineText]="'Listen the bestselling music.'"
+  [isSignedUp]="isSignedUp"
+  (userLoggedOut)="userHasLoggedOut()"
   (signal)="openDialog()"
   >
 </app-header>
 
-<signup-form [shouldDialogOpen]="dialog"></signup-form>
+<signup-form [shouldDialogOpen]="dialog" (dialogWasClosed)="dialogClosed()"></signup-form>
 
-<app-footer></app-footer>
+<div id="contents">
+  <section class="sidebar">
+    <app-sidebar></app-sidebar>
+  </section>
+  <section class="list">
+    <app-search></app-search>
+    <app-contents></app-contents>
+  </section>
+</div>
+
+
+<!-- <app-footer></app-footer> -->

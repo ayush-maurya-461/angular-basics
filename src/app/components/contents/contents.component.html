@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="music" *ngFor="let music of musicList">
+        <img [src]="music.image" />
+        <h4>Name : {{ music.name }}</h4>
+        <p>Artist :  {{ music.artist }}</p>
+        <p>Genre : {{ music.genre }}</p>
+        <button>Play</button>
+    </div>
+</div>
+
+
+<button (click)="currentlyPlayingMusic()">Which Music is playing</button>

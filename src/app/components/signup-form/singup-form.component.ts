@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -7,11 +7,13 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./signup-form.component.css'],
 })
 export class SignupFormComponent {
+  @Input() shouldDialogOpen: boolean = false;
+  @Output() dialogWasClosed: EventEmitter<void> = new EventEmitter<void>();
 
-   @Input() shouldDialogOpen: boolean = false;
-
-  submitForm(event: any, form: NgForm, dialog:HTMLDialogElement) {
+  submitForm(event: any, form: NgForm, dialog: HTMLDialogElement) {
     event.preventDefault();
-
+    this.shouldDialogOpen = false;
+    this.dialogWasClosed.emit()
+    form.reset();
   }
 }
